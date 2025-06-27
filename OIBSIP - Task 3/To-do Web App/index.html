@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do WebApp - Vinay Kumar</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/b3a31810a0.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <h1>To-Do Web App</h1>
+    <div class="input-container">
+        <label for="Tasktitle">Title </label>
+        <input type="text" id="Tasktitle" class="input-controls" placeholder="eg., learn books..."><br>
+        <label for="Taskdesc">Description</label>
+        <textarea name="description" id="Taskdesc" rows="3" placeholder="description..." class="input-controls"></textarea>
+        <br>
+        <button id="addTaskButton" class="btn">Add Task</button>
+    </div>
+
+    <div class="task-list-container">
+        <div class="pending-tasks">
+            <h2><i class="fa-solid fa-list-check" style="color: yellow;"></i> Pending Tasks</h2>
+            <ul id="pendingTasksList">
+                <!-- Pending tasks will be added here dynamically -->
+            </ul>
+        </div>
+        <div class="completed-tasks">
+            <h2><i class="fa-solid fa-square-check" style="color: #63E6BE;"></i> Completed Tasks</h2>
+            <ul id="completedTasksList">
+                <!-- Completed tasks will be added here dynamically -->
+            </ul>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
